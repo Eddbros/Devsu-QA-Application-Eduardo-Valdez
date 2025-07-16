@@ -1,0 +1,12 @@
+- Las pruebas incluyen validaciones con "pm.expect()" para verificar que:
+  - Status code sea el esperado
+  - Los valores del JSON de respuesta sean correctos
+- Se utilizan scripts en "Pre-request" para generar IDs o tokens dinámicamente
+- Se utilizan scripts en "Post-response" para validar que las variables de ambiente coinciden con las variables locales
+
+
+## 🧑‍ Autor
+
+**Eduardo Valdez Escalante**  
+QA Engineer | Selenium | Postman | TestNG  
+[LinkedIn](https://www.linkedin.com/in/eduardo-valdez-406009245) || [GitHub](https://github.com/eddbros)

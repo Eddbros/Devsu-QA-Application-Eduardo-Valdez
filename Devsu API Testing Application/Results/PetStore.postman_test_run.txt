@@ -1,0 +1,194 @@
+{
+	"id": "d7a1df46-fbb3-4658-bc6a-01ac62c79dd0",
+	"name": "PetStore",
+	"timestamp": "2025-07-16T10:20:20.528Z",
+	"collection_id": "45551765-35f37ba3-6042-4db3-a743-35ca0c12e8e6",
+	"folder_id": 0,
+	"environment_id": "45551765-d8782e85-3579-41cd-bc07-5c4678c94618",
+	"totalPass": 12,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-07-16T10:20:19.307Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "42c0136d-5f2a-4821-be30-c9f2bd131cf3",
+			"name": "New Pet",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"time": 110,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"PetID saved": true,
+				"Pet name saved": true,
+				"Pet status saved": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PetID saved": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet name saved": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet status saved": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				110
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"PetID saved": true,
+					"Pet name saved": true,
+					"Pet status saved": true
+				}
+			]
+		},
+		{
+			"id": "73721ab0-8c13-4a07-96bf-0536e05473fe",
+			"name": "Pet Info",
+			"url": "https://petstore.swagger.io/v2/pet/987654321?PetID=987654321",
+			"time": 103,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Pet ID is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet ID is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				103
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Pet ID is correct": true
+				}
+			]
+		},
+		{
+			"id": "83db1f8b-2393-4d7c-86e7-cad3d95d0081",
+			"name": "update pet info",
+			"url": "https://petstore.swagger.io/v2/pet/",
+			"time": 108,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Name Updated Correctly": true,
+				"Pet name saved": true,
+				"Pet Status Updated Correctly (Sold)": true,
+				"Pet Status saved": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name Updated Correctly": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet name saved": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet Status Updated Correctly (Sold)": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet Status saved": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				108
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Name Updated Correctly": true,
+					"Pet name saved": true,
+					"Pet Status Updated Correctly (Sold)": true,
+					"Pet Status saved": true
+				}
+			]
+		},
+		{
+			"id": "081f336a-3a9b-43de-be47-42c3a494ac45",
+			"name": "View sold pets",
+			"url": "https://petstore.swagger.io/v2/pet/findByStatus?status=sold&ID=987654321",
+			"time": 103,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				103
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 424,
+	"collection": {
+		"requests": [
+			{
+				"id": "42c0136d-5f2a-4821-be30-c9f2bd131cf3",
+				"method": "POST"
+			},
+			{
+				"id": "73721ab0-8c13-4a07-96bf-0536e05473fe",
+				"method": "GET"
+			},
+			{
+				"id": "83db1f8b-2393-4d7c-86e7-cad3d95d0081",
+				"method": "PUT"
+			},
+			{
+				"id": "081f336a-3a9b-43de-be47-42c3a494ac45",
+				"method": "GET"
+			}
+		]
+	}
+}
